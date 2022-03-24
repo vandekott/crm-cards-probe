@@ -358,8 +358,8 @@
                 },
             ]}" class="columns p-4 h-full mb-24 z-10">
             <template x-for="column in columns">
-                <div :class="'bg-' + column.color + '-50'" class="h-auto py-1 px-2 lg:py-3 lg:px-4 pt-8 border-slate-100 rounded-md overflow-y-auto">
-                    <h2 class="py-1 lg:py-3 text-slate-600 font-bold texl-lg">
+                <div :class="'bg-' + column.color + '-50'" class="h-auto max-w-screen-sm py-1 px-2 lg:py-3 lg:px-4 pt-8 border-slate-100 rounded-md overflow-y-auto">
+                    <h2 class="pb-3 lg:pb-4 text-slate-600 font-bold texl-lg">
                         <span x-text="column.title"></span>
                         <span class="text-slate-400">&bull; <span x-text="column.count"></span> за последние сутки</span>
                     </h2>
